@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://d4ih1wuce6xjc"
+path="res://.godot/imported/Log_Icon.aseprite-bff311e50213b575092f3788a760b02c.res"
+
+[deps]
+
+source_file="res://assets/Sprites/Items/Log_Icon.aseprite"
+dest_files=["res://.godot/imported/Log_Icon.aseprite-bff311e50213b575092f3788a760b02c.res"]
+
+[params]
+

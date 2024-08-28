@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://bi78o33rh2c5t"
+path="res://.godot/imported/Props_Forest.aseprite-5128ec465329ac95a80a11a5be5d38e0.res"
+
+[deps]
+
+source_file="res://assets/Environment/Props/Props_Forest.aseprite"
+dest_files=["res://.godot/imported/Props_Forest.aseprite-5128ec465329ac95a80a11a5be5d38e0.res"]
+
+[params]
+

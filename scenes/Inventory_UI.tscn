@@ -1,0 +1,126 @@
+[gd_scene load_steps=9 format=3 uid="uid://sqwffoss3rjp"]
+
+[ext_resource type="Script" path="res://scripts/InventoryUI.gd" id="1_k1c3w"]
+[ext_resource type="PackedScene" uid="uid://dib5m4se8yuc0" path="res://scenes/inventory_slot.tscn" id="2_ua5yy"]
+[ext_resource type="Texture2D" uid="uid://tujtgecfu1rl" path="res://assets/Sprites/InventoryUI.png" id="3_dupoo"]
+[ext_resource type="Script" path="res://scenes/TextureRect.gd" id="4_sdamd"]
+[ext_resource type="Texture2D" uid="uid://3hxmy8elasri" path="res://assets/Sprites/Items/Pickaxe_Icon.png" id="5_6squ3"]
+[ext_resource type="Texture2D" uid="uid://ni1ftokoj55h" path="res://assets/Sprites/Items/Axe_Icon.png" id="6_0vjo7"]
+[ext_resource type="Texture2D" uid="uid://cyfmnwoxb37kx" path="res://assets/Sprites/Items/Hoe_Icon.png" id="7_80n5o"]
+[ext_resource type="Texture2D" uid="uid://b4xpe667ow2ps" path="res://assets/Sprites/Items/Log_Icon.png" id="8_80r8y"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k1c3w")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 550.0
+offset_bottom = 600.0
+size_flags_stretch_ratio = 0.0
+texture = ExtResource("3_dupoo")
+expand_mode = 1
+stretch_mode = 4
+script = ExtResource("4_sdamd")
+
+[node name="PanelContainer" type="PanelContainer" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.098
+anchor_top = 0.262
+anchor_right = 0.828
+anchor_bottom = 0.935
+
+[node name="GridContainer" type="GridContainer" parent="TextureRect/PanelContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+columns = 3
+
+[node name="TextureButton" parent="TextureRect/PanelContainer/GridContainer" instance=ExtResource("2_ua5yy")]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("5_6squ3")
+stretch_mode = 0
+
+[node name="Label1" type="Label" parent="TextureRect/PanelContainer/GridContainer/TextureButton"]
+visible = false
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="TextureButton2" parent="TextureRect/PanelContainer/GridContainer" instance=ExtResource("2_ua5yy")]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+texture_normal = ExtResource("6_0vjo7")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="TextureRect/PanelContainer/GridContainer/TextureButton2"]
+visible = false
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="TextureButton3" parent="TextureRect/PanelContainer/GridContainer" instance=ExtResource("2_ua5yy")]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+texture_normal = ExtResource("7_80n5o")
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="TextureRect/PanelContainer/GridContainer/TextureButton3"]
+visible = false
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="TextureButton4" parent="TextureRect/PanelContainer/GridContainer" instance=ExtResource("2_ua5yy")]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+texture_normal = ExtResource("8_80r8y")
+stretch_mode = 0
+
+[node name="Label4" type="Label" parent="TextureRect/PanelContainer/GridContainer/TextureButton4"]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="TextureButton5" parent="TextureRect/PanelContainer/GridContainer" instance=ExtResource("2_ua5yy")]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+
+[node name="TextureButton6" parent="TextureRect/PanelContainer/GridContainer" instance=ExtResource("2_ua5yy")]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+
+[node name="TextureButton7" parent="TextureRect/PanelContainer/GridContainer" instance=ExtResource("2_ua5yy")]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+
+[node name="TextureButton8" parent="TextureRect/PanelContainer/GridContainer" instance=ExtResource("2_ua5yy")]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+
+[node name="TextureButton9" parent="TextureRect/PanelContainer/GridContainer" instance=ExtResource("2_ua5yy")]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2

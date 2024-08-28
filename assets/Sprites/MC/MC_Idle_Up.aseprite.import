@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://de36u1ex24ibu"
+path="res://.godot/imported/MC_Idle_Up.aseprite-cf3aee89a0fe464bdf555c3f75f2ed0c.res"
+
+[deps]
+
+source_file="res://assets/Sprites/MC/MC_Idle_Up.aseprite"
+dest_files=["res://.godot/imported/MC_Idle_Up.aseprite-cf3aee89a0fe464bdf555c3f75f2ed0c.res"]
+
+[params]
+

@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://k5whwsypabw1"
+path="res://.godot/imported/MC_Run_Down.aseprite-a81ba400e17a3268dc2656ea4981362e.res"
+
+[deps]
+
+source_file="res://assets/Sprites/MC/MC_Run_Down.aseprite"
+dest_files=["res://.godot/imported/MC_Run_Down.aseprite-a81ba400e17a3268dc2656ea4981362e.res"]
+
+[params]
+

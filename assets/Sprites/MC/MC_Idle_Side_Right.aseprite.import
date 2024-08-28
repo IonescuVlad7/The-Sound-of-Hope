@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://2i0vusfqv5an"
+path="res://.godot/imported/MC_Idle_Side_Right.aseprite-5e97667054db7c1be68e3226f866fbaf.res"
+
+[deps]
+
+source_file="res://assets/Sprites/MC/MC_Idle_Side_Right.aseprite"
+dest_files=["res://.godot/imported/MC_Idle_Side_Right.aseprite-5e97667054db7c1be68e3226f866fbaf.res"]
+
+[params]
+

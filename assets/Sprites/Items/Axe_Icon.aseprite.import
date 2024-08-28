@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://d4iw3itmb3yh6"
+path="res://.godot/imported/Axe_Icon.aseprite-5cc5ff55fd633508ae6a693a7d5c8928.res"
+
+[deps]
+
+source_file="res://assets/Sprites/Items/Axe_Icon.aseprite"
+dest_files=["res://.godot/imported/Axe_Icon.aseprite-5cc5ff55fd633508ae6a693a7d5c8928.res"]
+
+[params]
+

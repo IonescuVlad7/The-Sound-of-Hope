@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://tebac5e7dgnk"
+path="res://.godot/imported/Structure.aseprite-9db6f48ec11617c57b3188a250487ea1.res"
+
+[deps]
+
+source_file="res://assets/Buildings/White/Structure.aseprite"
+dest_files=["res://.godot/imported/Structure.aseprite-9db6f48ec11617c57b3188a250487ea1.res"]
+
+[params]
+

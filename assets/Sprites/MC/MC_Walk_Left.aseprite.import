@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://d3brbyhnwdak5"
+path="res://.godot/imported/MC_Walk_Left.aseprite-d670fd1ad5af1f93b1f8e5800e2d0fe5.res"
+
+[deps]
+
+source_file="res://assets/Sprites/MC/MC_Walk_Left.aseprite"
+dest_files=["res://.godot/imported/MC_Walk_Left.aseprite-d670fd1ad5af1f93b1f8e5800e2d0fe5.res"]
+
+[params]
+

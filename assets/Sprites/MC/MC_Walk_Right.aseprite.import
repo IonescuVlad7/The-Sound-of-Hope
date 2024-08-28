@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://c1xcnxt2l8noi"
+path="res://.godot/imported/MC_Walk_Right.aseprite-99a59bf71027a4910ac25b967d2470d2.res"
+
+[deps]
+
+source_file="res://assets/Sprites/MC/MC_Walk_Right.aseprite"
+dest_files=["res://.godot/imported/MC_Walk_Right.aseprite-99a59bf71027a4910ac25b967d2470d2.res"]
+
+[params]
+
