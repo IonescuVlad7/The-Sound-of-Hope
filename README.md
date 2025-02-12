@@ -14,9 +14,9 @@
  2. Se va apasa dublu clic pe fisierul executabil "The Sound of Hope.exe".
 
  Controale :
- WASD – Mișcarea personajului jucătorului
- E – Interacțiunea cu diferite activități
- R – Utilizarea toporului pentru tăierea copacilor
- F – Aprinderea lanternei
- Tab – Deschiderea inventarului
- Esc – Intoarcerea la meniul principal.
+ 1. WASD – Mișcarea personajului jucătorului
+ 2. E – Interacțiunea cu diferite activități
+ 3. R – Utilizarea toporului pentru tăierea copacilor
+ 4. F – Aprinderea lanternei
+ 5. Tab – Deschiderea inventarului
+ 6. Esc – Intoarcerea la meniul principal.
