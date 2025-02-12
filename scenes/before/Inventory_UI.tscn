@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://sqwffoss3rjp"]
+
+[ext_resource type="Script" path="res://scripts/InventoryUI.gd" id="1_k1c3w"]
+[ext_resource type="Texture2D" uid="uid://btqp62rjv6wch" path="res://test.jpg" id="2_1g7hc"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k1c3w")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 3
+
+[node name="TextureButton" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+texture_normal = ExtResource("2_1g7hc")
+
+[node name="TextureButton2" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_1g7hc")
+
+[node name="TextureButton3" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+
+[node name="TextureButton4" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+
+[node name="TextureButton5" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+
+[node name="TextureButton6" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_1g7hc")
+
+[node name="TextureButton7" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+
+[node name="TextureButton8" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+
+[node name="TextureButton9" type="TextureButton" parent="GridContainer"]
+layout_mode = 2

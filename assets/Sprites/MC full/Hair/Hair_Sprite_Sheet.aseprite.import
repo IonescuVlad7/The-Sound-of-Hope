@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://bfnwc1sc7wboy"
+path="res://.godot/imported/Hair_Sprite_Sheet.aseprite-98e266d31d30d61ac2f68a8dea78a275.res"
+
+[deps]
+
+source_file="res://assets/Sprites/MC full/Hair/Hair_Sprite_Sheet.aseprite"
+dest_files=["res://.godot/imported/Hair_Sprite_Sheet.aseprite-98e266d31d30d61ac2f68a8dea78a275.res"]
+
+[params]
+

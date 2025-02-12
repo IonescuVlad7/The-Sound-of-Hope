@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bg4c08pwhhgvp"
+path="res://.godot/imported/ES_Axe, Hit Tree Stump 01 - Epidemic Sound.mp3-06460df01270f40539e3242b2d1e27d5.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/sfx/wood/ES_Axe, Hit Tree Stump 01 - Epidemic Sound.mp3"
+dest_files=["res://.godot/imported/ES_Axe, Hit Tree Stump 01 - Epidemic Sound.mp3-06460df01270f40539e3242b2d1e27d5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

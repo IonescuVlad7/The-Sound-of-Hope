@@ -1,0 +1,5 @@
+1. Animations for horizontal and vertical Strike only differ in the arms, so use the "Strike" body base and add the corresponding arm animations
+
+2. Idle and running holding animation is based on the same normal idle and running animations, just change the arms
+
+3. Layer order may vary depending on the animation, so test different layer positions

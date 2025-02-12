@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="Inv" load_steps=16 format=3 uid="uid://bullwistfeuhx"]
+
+[ext_resource type="Script" path="res://inventory/inventory.gd" id="1_rxjg7"]
+[ext_resource type="Script" path="res://InvSlot.gd" id="2_13t77"]
+[ext_resource type="Resource" uid="uid://chcvqgmsb7mk5" path="res://inventory/items/tools/lantern.tres" id="3_0mash"]
+[ext_resource type="Resource" uid="uid://c6v6rtp35pu8e" path="res://inventory/items/tools/waterKnife.tres" id="4_1ohln"]
+[ext_resource type="Resource" uid="uid://cva1gx16oga3n" path="res://inventory/items/tools/axeHoe.tres" id="5_ufp0e"]
+[ext_resource type="Resource" uid="uid://dfm1m0b18g6a3" path="res://inventory/items/tools/waterCan.tres" id="6_pd4xq"]
+
+[sub_resource type="Resource" id="Resource_lpnul"]
+script = ExtResource("2_13t77")
+item = ExtResource("3_0mash")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_ynrg2"]
+script = ExtResource("2_13t77")
+item = ExtResource("4_1ohln")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_v24fp"]
+script = ExtResource("2_13t77")
+item = ExtResource("5_ufp0e")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_33o1l"]
+script = ExtResource("2_13t77")
+item = ExtResource("6_pd4xq")
+amount = 5
+
+[sub_resource type="Resource" id="Resource_lcwsm"]
+script = ExtResource("2_13t77")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_0j23s"]
+script = ExtResource("2_13t77")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_usgwt"]
+script = ExtResource("2_13t77")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_pr34v"]
+script = ExtResource("2_13t77")
+amount = 0
+
+[sub_resource type="Resource" id="Resource_pulhg"]
+script = ExtResource("2_13t77")
+amount = 0
+
+[resource]
+script = ExtResource("1_rxjg7")
+slots = Array[ExtResource("2_13t77")]([SubResource("Resource_lpnul"), SubResource("Resource_ynrg2"), SubResource("Resource_v24fp"), SubResource("Resource_33o1l"), SubResource("Resource_lcwsm"), SubResource("Resource_0j23s"), SubResource("Resource_usgwt"), SubResource("Resource_pr34v"), SubResource("Resource_pulhg")])

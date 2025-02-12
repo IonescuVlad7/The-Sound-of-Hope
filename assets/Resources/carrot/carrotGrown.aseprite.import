@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://px8wmdk8kwm0"
+path="res://.godot/imported/carrotGrown.aseprite-3e6cf02d70649b4c971a675f601d8912.res"
+
+[deps]
+
+source_file="res://assets/Resources/carrot/carrotGrown.aseprite"
+dest_files=["res://.godot/imported/carrotGrown.aseprite-3e6cf02d70649b4c971a675f601d8912.res"]
+
+[params]
+

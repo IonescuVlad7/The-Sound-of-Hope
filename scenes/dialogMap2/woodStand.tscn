@@ -1,0 +1,92 @@
+[gd_scene load_steps=14 format=3 uid="uid://dookb15gw41h"]
+
+[ext_resource type="Texture2D" uid="uid://b0mk766hudafc" path="res://inventory/items/wooden Stand/Knife_Water_Enchantment_Wooden_Stand_Sprite_Sheet.png" id="1_qcw8o"]
+[ext_resource type="Script" path="res://scenes/dialogMap2/wood_stand.gd" id="2_pc4ue"]
+[ext_resource type="PackedScene" uid="uid://bqiarxq4pt8m" path="res://interaction/interactionArea/InteractionArea.tscn" id="3_p3ux3"]
+[ext_resource type="Resource" uid="uid://c6v6rtp35pu8e" path="res://inventory/items/tools/waterKnife.tres" id="3_p5gxr"]
+[ext_resource type="Resource" uid="uid://dfm1m0b18g6a3" path="res://inventory/items/tools/waterCan.tres" id="4_w8bxi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60lx7"]
+atlas = ExtResource("1_qcw8o")
+region = Rect2(288, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ane65"]
+atlas = ExtResource("1_qcw8o")
+region = Rect2(384, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dldd0"]
+atlas = ExtResource("1_qcw8o")
+region = Rect2(480, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wukmm"]
+atlas = ExtResource("1_qcw8o")
+region = Rect2(0, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjbg4"]
+atlas = ExtResource("1_qcw8o")
+region = Rect2(96, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6uw8"]
+atlas = ExtResource("1_qcw8o")
+region = Rect2(192, 0, 96, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lkqkq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60lx7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ane65")
+}],
+"loop": true,
+"name": &"charging",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dldd0")
+}],
+"loop": false,
+"name": &"filled",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wukmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjbg4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6uw8")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xuf1n"]
+size = Vector2(171.429, 91.3333)
+
+[node name="woodStand" type="AnimatedSprite2D"]
+texture_filter = 1
+position = Vector2(-5.83333, -4)
+scale = Vector2(1.33681, 1.375)
+sprite_frames = SubResource("SpriteFrames_lkqkq")
+animation = &"charging"
+script = ExtResource("2_pc4ue")
+knife = ExtResource("3_p5gxr")
+waterCan = ExtResource("4_w8bxi")
+
+[node name="InteractionArea" parent="." instance=ExtResource("3_p3ux3")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(0, 21)
+shape = SubResource("RectangleShape2D_xuf1n")
+
+[node name="canFilledTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="canFilledTimer" to="." method="_on_can_filled_timer_timeout"]

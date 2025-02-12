@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://c6v6rtp35pu8e"]
+
+[ext_resource type="Script" path="res://inventory/inventoryItem.gd" id="1_gqofx"]
+[ext_resource type="Texture2D" uid="uid://d4ipve4gdfxkc" path="res://inventory/items/tools/Knife_Water_Enchantment.png" id="2_kcl1r"]
+
+[resource]
+script = ExtResource("1_gqofx")
+name = "waterKnife"
+texture = ExtResource("2_kcl1r")

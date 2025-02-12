@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4dkohpoo7b62"]
+
+[ext_resource type="Script" path="res://inventory/invUISlot.gd" id="1_infb2"]
+[ext_resource type="Texture2D" uid="uid://b8ge3t3k1r14t" path="res://assets/Inventory/inventory-slot.png" id="1_oktgl"]
+
+[node name="invUISlot" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(31, 31)
+offset_right = 31.0
+offset_bottom = 31.0
+script = ExtResource("1_infb2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.9375, 1.9375)
+texture = ExtResource("1_oktgl")
+centered = false
+metadata/_aseprite_wizard_interface_config_ = {
+"layer_section": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(31, 31)
+layout_mode = 0
+offset_right = 31.0
+offset_bottom = 31.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="itemDisplay" type="Sprite2D" parent="CenterContainer/Panel"]
+scale = Vector2(0.5, 0.5)
+
+[node name="Label" type="Label" parent="CenterContainer/Panel"]
+texture_filter = 1
+custom_minimum_size = Vector2(19, 23)
+layout_direction = 3
+layout_mode = 0
+offset_left = -20.0
+offset_right = -1.0
+offset_bottom = 23.0
+scale = Vector2(0.7, 0.7)
+text = "99"

@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://dtdgf43qc2sim"
+path="res://.godot/imported/waterCan.aseprite-7b180c3a2055aa46e5c167ff91918c5c.res"
+
+[deps]
+
+source_file="res://inventory/items/tools/waterCan.aseprite"
+dest_files=["res://.godot/imported/waterCan.aseprite-7b180c3a2055aa46e5c167ff91918c5c.res"]
+
+[params]
+

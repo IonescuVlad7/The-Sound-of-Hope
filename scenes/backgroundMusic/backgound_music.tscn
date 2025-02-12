@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbglrbu8ahreu"]
+
+[ext_resource type="AudioStream" uid="uid://ctdt2nymw202t" path="res://assets/sound/background/perfect-beauty-191271.mp3" id="1_id2jq"]
+
+[node name="BackgoundMusic" type="AudioStreamPlayer2D"]
+position = Vector2(-1, 0)
+stream = ExtResource("1_id2jq")
+volume_db = -10.0
+autoplay = true

@@ -1,0 +1,168 @@
+[gd_scene load_steps=24 format=3 uid="uid://bnpuyv6a7v1m6"]
+
+[ext_resource type="Script" path="res://assets/Environment/Props/land.gd" id="1_neybc"]
+[ext_resource type="Texture2D" uid="uid://ced4ewt3pf3k2" path="res://assets/Environment/Tiles/Tiles.png" id="1_o1bl2"]
+[ext_resource type="Texture2D" uid="uid://3yfp2umbduaj" path="res://assets/Environment/Props/Crops.png" id="2_64574"]
+[ext_resource type="Resource" uid="uid://ca5l10g8dvsxu" path="res://assets/Resources/carrot/carrotGrown.tres" id="2_tyxyk"]
+[ext_resource type="Resource" uid="uid://bkmesbx0ee4xh" path="res://assets/Resources/carrot/carrotSeed.tres" id="2_yg70w"]
+[ext_resource type="PackedScene" uid="uid://bqiarxq4pt8m" path="res://interaction/interactionArea/InteractionArea.tscn" id="4_8ciu4"]
+[ext_resource type="Resource" uid="uid://dfm1m0b18g6a3" path="res://inventory/items/tools/waterCan.tres" id="4_rgg34"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2v022"]
+radius = 26.4666
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6a8uv"]
+atlas = ExtResource("1_o1bl2")
+region = Rect2(416, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhbcc"]
+atlas = ExtResource("2_64574")
+region = Rect2(256, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v4p5l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6a8uv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yhbcc")
+}],
+"loop": true,
+"name": &"emptyLand",
+"speed": 0.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hc6s"]
+atlas = ExtResource("2_64574")
+region = Rect2(240, 160, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2t5q8"]
+atlas = ExtResource("2_64574")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_votwy"]
+atlas = ExtResource("2_64574")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g1csg"]
+atlas = ExtResource("2_64574")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_scbbw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1hc6s")
+}],
+"loop": true,
+"name": &"notWatered",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2t5q8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_votwy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g1csg")
+}],
+"loop": false,
+"name": &"watered",
+"speed": 0.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ofbw"]
+atlas = ExtResource("2_64574")
+region = Rect2(0, 64, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hlm1e"]
+atlas = ExtResource("2_64574")
+region = Rect2(32, 64, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eunue"]
+atlas = ExtResource("2_64574")
+region = Rect2(64, 64, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_procn"]
+atlas = ExtResource("2_64574")
+region = Rect2(96, 64, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ckbnr"]
+atlas = ExtResource("2_64574")
+region = Rect2(240, 160, 80, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_myaoj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ofbw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hlm1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eunue")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_procn")
+}],
+"loop": true,
+"name": &"growingCarrot",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ckbnr")
+}],
+"loop": true,
+"name": &"notPlanted",
+"speed": 0.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_csxa5"]
+radius = 17.1172
+
+[node name="Land" type="StaticBody2D"]
+script = ExtResource("1_neybc")
+seed = ExtResource("2_yg70w")
+carrot = ExtResource("2_tyxyk")
+waterCan = ExtResource("4_rgg34")
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(0.64675, 0.64675)
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_2v022")
+
+[node name="land" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_v4p5l")
+animation = &"emptyLand"
+frame_progress = 0.306658
+
+[node name="water" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_scbbw")
+animation = &"watered"
+
+[node name="growingPlant" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -26)
+sprite_frames = SubResource("SpriteFrames_myaoj")
+animation = &"notPlanted"
+
+[node name="InteractionArea" parent="." instance=ExtResource("4_8ciu4")]
+action_name = "hoe"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("CircleShape2D_csxa5")
+
+[node name="carrotGrowTimer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="input_event" from="InteractionArea" to="." method="_on_interaction_area_input_event"]
+[connection signal="timeout" from="carrotGrowTimer" to="." method="_on_carrot_grow_timer_timeout"]

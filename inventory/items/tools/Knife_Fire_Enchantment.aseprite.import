@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://lfb1o4f2iyys"
+path="res://.godot/imported/Knife_Fire_Enchantment.aseprite-cbb1d6a00a2628998b485534bc784f6e.res"
+
+[deps]
+
+source_file="res://inventory/items/tools/Knife_Fire_Enchantment.aseprite"
+dest_files=["res://.godot/imported/Knife_Fire_Enchantment.aseprite-cbb1d6a00a2628998b485534bc784f6e.res"]
+
+[params]
+

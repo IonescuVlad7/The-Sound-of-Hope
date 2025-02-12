@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://dlrbvlrksq0tc"
+path="res://.godot/imported/carrotSeed.aseprite-5cd8751c1ea572e534111bab0e2ec573.res"
+
+[deps]
+
+source_file="res://assets/Environment/Props/carrotSeed.aseprite"
+dest_files=["res://.godot/imported/carrotSeed.aseprite-5cd8751c1ea572e534111bab0e2ec573.res"]
+
+[params]
+

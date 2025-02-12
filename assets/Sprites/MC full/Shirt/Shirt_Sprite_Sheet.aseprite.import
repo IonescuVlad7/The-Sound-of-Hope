@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://b2qjyr8ad8dtr"
+path="res://.godot/imported/Shirt_Sprite_Sheet.aseprite-10caf9a8097bd14e0c7bdbf230ef1ba5.res"
+
+[deps]
+
+source_file="res://assets/Sprites/MC full/Shirt/Shirt_Sprite_Sheet.aseprite"
+dest_files=["res://.godot/imported/Shirt_Sprite_Sheet.aseprite-10caf9a8097bd14e0c7bdbf230ef1ba5.res"]
+
+[params]
+
